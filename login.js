@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("submit")
     e.preventDefault()   
     localStorage.password = password.value
-    login({
+    submit({
         username:username.value,
         password:password.value,
     }).then(reponse => {
